@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/AndrewNG_ML/project/End-To-End-MLOPS-Data-Science-Project-/mlruns/0/496d788b5be3414ca68c460724ea5aac/artifacts
+end_time: 1712842742929
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 496d788b5be3414ca68c460724ea5aac
+run_name: burly-conch-486
+run_uuid: 496d788b5be3414ca68c460724ea5aac
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1712842738505
+status: 3
+tags: []
+user_id: bansa

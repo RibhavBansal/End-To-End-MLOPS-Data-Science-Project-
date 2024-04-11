@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/AndrewNG_ML/project/End-To-End-MLOPS-Data-Science-Project-/mlruns/0/d2c4a6f1ff1a431dbcdfa98e4a7efb9c/artifacts
+end_time: 1712843268340
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d2c4a6f1ff1a431dbcdfa98e4a7efb9c
+run_name: indecisive-doe-468
+run_uuid: d2c4a6f1ff1a431dbcdfa98e4a7efb9c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1712843263813
+status: 3
+tags: []
+user_id: bansa

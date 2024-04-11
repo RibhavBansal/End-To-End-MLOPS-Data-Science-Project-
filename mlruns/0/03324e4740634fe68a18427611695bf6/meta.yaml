@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/AndrewNG_ML/project/End-To-End-MLOPS-Data-Science-Project-/mlruns/0/03324e4740634fe68a18427611695bf6/artifacts
+end_time: 1712843321725
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 03324e4740634fe68a18427611695bf6
+run_name: sedate-asp-83
+run_uuid: 03324e4740634fe68a18427611695bf6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1712843317547
+status: 3
+tags: []
+user_id: bansa
