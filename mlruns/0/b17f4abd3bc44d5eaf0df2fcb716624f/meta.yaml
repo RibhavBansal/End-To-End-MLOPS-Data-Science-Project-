@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/AndrewNG_ML/project/End-To-End-MLOPS-Data-Science-Project-/mlruns/0/b17f4abd3bc44d5eaf0df2fcb716624f/artifacts
+end_time: 1712851716603
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b17f4abd3bc44d5eaf0df2fcb716624f
+run_name: zealous-skink-860
+run_uuid: b17f4abd3bc44d5eaf0df2fcb716624f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1712851712345
+status: 3
+tags: []
+user_id: bansa

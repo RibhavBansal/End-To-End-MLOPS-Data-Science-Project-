@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/AndrewNG_ML/project/End-To-End-MLOPS-Data-Science-Project-/mlruns/0/25b892d458154e55819552b0ef8cac6b/artifacts
+end_time: 1712846353574
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 25b892d458154e55819552b0ef8cac6b
+run_name: honorable-snail-970
+run_uuid: 25b892d458154e55819552b0ef8cac6b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1712846348650
+status: 3
+tags: []
+user_id: bansa
