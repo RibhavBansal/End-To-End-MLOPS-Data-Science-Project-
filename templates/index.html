@@ -1,59 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Web App</title>
-        <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="static/css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="/">Home</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
-<!--                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>-->
-<!--                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>-->
-<!--                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Sample Post</a></li>-->
-<!--                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>-->
-                    </ul>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Quality Prediction</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-5YtxWM7qRN0E78o6xRzNC2D7KH1EZDV9u+9PQFdtbkpRV9ffXTgVyxSvruXITZv6Hn/sMx8Jz5Rvn7Nr3DxwVQ==" crossorigin="anonymous" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="static/css/styles.css">
+    <!-- Additional Custom Styles -->
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f0f8ff; /* Light Blue Background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        /* Navbar Styling */
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+        }
+        .navbar-brand {
+            font-family: 'Lora', serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+        }
+        .navbar-toggler {
+            border: none;
+            color: #333;
+        }
+        /* Header Styling */
+        .masthead {
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            text-align: center;
+            color: #fff;
+        }
+        .masthead h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .masthead .subheading {
+            font-size: 24px;
+            font-style: italic;
+        }
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 50px 0;
+        }
+        footer a {
+            color: #fff;
+        }
+        .footer-social-icons {
+            margin-top: 20px;
+        }
+        .footer-social-icons a {
+            margin: 0 10px;
+            font-size: 24px;
+        }
+        /* Form Styling */
+        .form-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            margin-top: 40px;
+        }
+        .form-container h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .form-row-total {
+            margin-bottom: 20px;
+        }
+        .form-row {
+            margin-bottom: 10px;
+        }
+        .input-label {
+            font-size: 16px;
+            font-weight: 600;
+            color: #555;
+        }
+        .input-text {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .form-row-last {
+            text-align: center;
+        }
+        .register {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .register:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="/">Wine App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Add your navigation items here if needed -->
+                </ul>
             </div>
-        </nav>
-        <!-- Page Header-->
-        <header class="masthead" style="background-image: url('static/assets/img/wine.jpg')">
-            <div class="container position-relative px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
-                        <div class="site-heading">
-                            <h1>Wine Quality Prediction</h1>
-                            <span class="subheading">A Wine Quality Checking Web App</span>
-                        </div>
+        </div>
+    </nav>
+    <!-- Page Header-->
+    <header class="masthead" style="background-image: url('static/assets/img/wine.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                    <div class="text-center">
+                        <h1>Wine Quality Prediction</h1>
+                        <p class="subheading">A Wine Quality Checking Web App</p>
                     </div>
                 </div>
             </div>
-        </header>
-
-
-        <!-- Main Content-->
-        <div class="container px-4 px-lg-5">
-
-           <!DOCTYPE html>
-<html>
+        </div>
+    </header>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 <head>
 	<meta charset="utf-8">
 	<title>Form-v9 by Colorlib</title>
