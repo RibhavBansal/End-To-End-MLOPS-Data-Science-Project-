@@ -1,16 +1,16 @@
 # End-To-End-MLOPS-Data-Science-Project-
 
 <p align="center">
-  <img src="/WQP/WQP1.jpg" width="400"/>
+  <img src="/WQP/WQP1.png" width="400"/>
 
 <p align="center">
-  <img src="/WQP/WQP2.jpg" width="400"/>
+  <img src="/WQP/WQP2.png" width="400"/>
 
 <p align="center">
-  <img src="/WQP/WQP3.jpg" width="400"/>
+  <img src="/WQP/WQP3.png" width="400"/>
 
 <p align="center">
-  <img src="/WQP/WQP4.jpg" width="400"/>
+  <img src="/WQP/WQP4.png" width="400"/>
 
 
 ## Workflows
