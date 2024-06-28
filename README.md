@@ -1,5 +1,18 @@
 # End-To-End-MLOPS-Data-Science-Project-
 
+<p align="center">
+  <img src="/WQP/WQP1.png"/>
+
+<p align="center">
+  <img src="/WQP/WQP2.png" width="400"/>
+
+<p align="center">
+  <img src="/WQP/WQP3.png"/>
+
+<p align="center">
+  <img src="/WQP/WQP4.png"/>
+
+
 ## Workflows
 
 1. Update config.yaml
